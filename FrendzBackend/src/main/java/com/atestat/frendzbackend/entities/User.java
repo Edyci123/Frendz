@@ -26,7 +26,9 @@ public class User implements UserDetails {
     private String email;
     @Column(nullable = false, length = 64)
     private String password;
+    @Column(length = 64)
     private String facebookLink;
+    @Column(length = 64)
     private String instagramLink;
 
     public User(String username, String email, String password) {

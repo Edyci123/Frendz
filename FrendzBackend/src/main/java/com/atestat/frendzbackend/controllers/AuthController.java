@@ -1,13 +1,11 @@
 package com.atestat.frendzbackend.controllers;
 
 import com.atestat.frendzbackend.entities.User;
-import com.atestat.frendzbackend.repos.UserRepository;
 import com.atestat.frendzbackend.services.UserService;
-import com.atestat.frendzbackend.utils.AuthRequest;
-import com.atestat.frendzbackend.utils.AuthResponse;
+import com.atestat.frendzbackend.valueobjects.AuthRequest;
+import com.atestat.frendzbackend.valueobjects.AuthResponse;
 import com.atestat.frendzbackend.utils.JwtTokenUtil;
 import com.atestat.frendzbackend.valueobjects.UserDTO;
-import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

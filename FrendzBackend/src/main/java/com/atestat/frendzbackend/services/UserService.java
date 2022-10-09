@@ -20,10 +20,10 @@ public class UserService {
         userRepository.save(user);
     }
 
-//    public void saveSnapchatAccount(String username) {
-//
-//    }
-//
-//    public void saveFacebookAccount(String username) {
-//    }
+    public void saveSnapchatAccount(String username) {
+        //userRepository.updateFacebookLink(username, "www.facebook.com/Edyci123");
+    }
+
+    public void saveFacebookAccount(String username) {
+    }
 }
