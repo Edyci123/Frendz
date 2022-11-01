@@ -11,14 +11,16 @@ import { MatInputModule } from '@angular/material/input'
 import { MatButtonModule } from '@angular/material/button'
 import { ReactiveFormsModule } from '@angular/forms';
 
-import { AuthComponent } from './auth/auth.component';
 import { HomeComponent } from './components/home/home.component';
-
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
+import { authInterceptorProviders } from './_services/auth-interceptor.service';
 @NgModule({
   declarations: [
     AppComponent,
-    AuthComponent,
-    HomeComponent
+    HomeComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +32,7 @@ import { HomeComponent } from './components/home/home.component';
     ReactiveFormsModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [authInterceptorProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
