@@ -1,0 +1,11 @@
+<mat-toolbar>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span>Frendz</span>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="onHome()">Home</button>
+        <button mat-menu-item (click)="onContacts()">My Contacts</button>
+        <button mat-menu-item (click)="onLogout()" [disabled]="isLoggedIn()">Logout</button>
+    </mat-menu>
+</mat-toolbar>
